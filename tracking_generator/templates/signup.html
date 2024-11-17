@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up Your Seller Account - Track360</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/my logo/track360.jpeg" alt="Track360 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">TRACK <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="track.html">TRACK YOUR PARCEL</a>
+                            <a href="bulk-track.html">BULK TRACK</a>
+                            <a href="view-all-shipments.html">VIEW ALL SHIPMENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="index.html#Analytics-Dashboard">ANALYTICS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+                <button id="signUpBtn" class="btn btn-primary" style="text-decoration: none;">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="signup-form" style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: #f8f8f8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h1>Set Up Your Seller Account</h1>
+            <p style="color: #666;">The final step before taking your business to the next level.</p>
+            <br>
+            <form id="registerForm">
+                <div class="form-group" style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="verificationCode">Verification Code:</label>
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="verificationCode" name="verificationCode" style="flex-grow: 1; margin-right: 10px;" required>
+                        <button type="button" class="btn btn-primary" style="padding: 8px 3px; width: 25%; flex-shrink: 0;">Send</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="preferredLanguage">Preferred Language:</label>
+                    <select id="preferredLanguage" name="preferredLanguage" required>
+                        <option value="">Please select</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Person in Charge's WhatsApp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="+60" required>
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button> <!-- Full width -->
+            </form>
+            <p style="text-align: center;">By signing up, you agree to Tracking.my's <a href="#" class="terms-link" style="color: #FF8C00; text-decoration: none;">Terms & Conditions</a> and <a href="#" class="privacy-link" style="color: #FF8C00; text-decoration: none;">Privacy Policy</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    
+    <script src="script.js"></script>
+    <!-- Add this just before the closing </body> tag -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Seller Platform</h2>
+            <p>Please sign-in to your account to access the Seller Platform</p>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" class="create-account-link">Create an account</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

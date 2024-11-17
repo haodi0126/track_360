@@ -1,0 +1,90 @@
+#track-hero {
+    height: 30vh;
+    background-image: url('track-hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+#track-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#track-hero h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 2.5rem;
+}
+
+#track-form {
+    padding: 3rem 5%;
+    background-color: #f8f8f8;
+}
+
+#tracking-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#tracking-number {
+    flex-grow: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#tracking-form .btn {
+    border-radius: 0 5px 5px 0;
+}
+
+#tracking-results {
+    padding: 3rem 5%;
+}
+
+/* Add styles for the tracking timeline here */
+
+#track-order {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#track-order h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    #track-order {
+        margin: 80px 20px 30px;
+        padding: 15px;
+    }
+
+    #tracking-form {
+        flex-direction: column;
+    }
+
+    #tracking-number,
+    #tracking-form .btn {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}

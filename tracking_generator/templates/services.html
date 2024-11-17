@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Track360</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services-styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/my logo/track360.jpeg" alt="Track360 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">TRACK <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="track.html">TRACK YOUR PARCEL</a>
+                            <a href="bulk-track.html">BULK TRACK</a>
+                            <a href="view-all-shipments.html">VIEW ALL SHIPMENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="index.html#Analytics-Dashboard">ANALYTICS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+                <button id="signUpBtn" class="btn btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="services-content">
+                <div class="services-text">
+                    <h1 class="animate-fade">
+                        Make Post-Purchase the <span class="highlight">Best Part</span><br>
+                        of the Customer Experience
+                     <p style="font-weight: normal;">Delight your customers with automated tracking to increase brand loyalty and drive higher business results</p>
+                    </h1>
+                    <a href="signup.html" class="btn btn-primary animate-fade">Get started - it's free</a>
+                </div>
+                <div class="services-image">
+                    <img src="img/home page/9.png" alt="Track360 Dashboard">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add this before the footer -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/10.png" alt="Shipment Visibility">
+                </div>
+                <h2>Shipment Visibility</h2>
+                <p>Get detailed tracking data in only one place. Automatically track and the latest carrier updates instead of checking manually.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/11.png" alt="RPA Automation">
+                </div>
+                <h2>RPA Automation</h2>
+                <p>Create custom RPA workflows to match your business needs, from managing inventory updates to sending personalized shipping notifications.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/12.png" alt="Notifications & Alerts">
+                </div>
+                <h2>Notifications & Alerts</h2>
+                <p>Keep both your team and customers updated with real-time notifications about shipment statuses, delays, and estimated delivery times.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/13.png" alt="Delay Prediction">
+                </div>
+                <h2>Delay Prediction</h2>
+                <p>Our advanced predictive analytics tools help you to get notified in advance and send alerts to customers if their delivery is expected to be delayed.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/14.png" alt="Visualization & Insights">
+                </div>
+                <h2>Visualization & Insights</h2>
+                <p>Gain insights into your logistics operations with visual analytics, tracking delivery performance, and identifying trends.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/home page/15.png" alt="API Integration">
+                </div>
+                <h2>API Integration</h2>
+                <p>Integrate seamlessly with multiple tracking APIs for real-time, automated shipment tracking. Automatically sync Lazada order details and shipment statuses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="stat-content">
+            <h2 class="stat-heading">83% of shoppers expect regular communication about their packages</h2>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Unlock Personalisation</h2>
+            <div class="underline"></div>
+            <p>Keep your profile up to date. Manage your preferences at any time and to ensure we're providing the services you value most.</p>
+            <a href="signup.html" class="cta-button">Get Started Now <span class="arrow">→</span></a>
+        </div>
+        <div class="curve-shape"></div>
+    </section>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Seller Platform</h2>
+            <p>Please sign-in to your account to access the Seller Platform</p>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" class="create-account-link">Create an account</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="contact.js"></script>
+    <script src="services.js"></script>
+</body>
+</html> 

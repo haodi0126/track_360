@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track360 - Professional Courier Tracking Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/my logo/track360.jpeg" alt="Logistics Icon">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">TRACK <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="track.html">TRACK YOUR PARCEL</a>
+                            <a href="bulk-track.html">BULK TRACK</a>
+                            <a href="view-all-shipments.html">VIEW ALL SHIPMENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#Analytics-Dashboard">ANALYTICS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+                <button id="signUpBtn" class="btn btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+               
+                <!-- Heading appears second -->
+                <h1 class="animate-fade">
+                    PROFESSIONAL COURIER TRACKING SERVICE
+                </h1>
+
+                <!-- Paragraph appears last -->
+                <p class="animate-fade">
+                    Track Smarter, Deliver Faster, Satisfy Customers
+                </p>
+                 <!-- Buttons appear first -->
+                 <div class="cta-buttons animate-fade">
+                    <div class="button-column">
+                        <a href="track.html" class="btn btn-primary" style="width: 100%; text-decoration: none;">Track Now</a>
+                        <a href="services.html" class="btn btn-secondary" style="width: 100%; text-decoration: none;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="track360-intro">
+            <div class="track360-content">
+                <div class="track360-image">
+                    <img src="img/home page/4.png" alt="Track360 Dashboard Illustration">
+                </div>
+                <div class="track360-text">
+                    <h2>At TRACK360,</h2>
+                    <p>we make shipment tracking simple, fast, and transparent. Our platform empowers businesses and customers alike by providing real-time tracking, proactive delay alerts, and comprehensive delivery insights—all from one centralized dashboard. TRACK360 ensures you stay informed every step of the way, helping you optimize your logistics, reduce delays, and enhance customer satisfaction. With seamless integration across major carriers, predictive analytics, and easy-to-use features, we're redefining the way you track and manage shipments.</p>
+                    <a href="contact.html" class="btn btn-primary" style="text-decoration: none;">Book Demo Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>BENEFITS OF TRACK360</h2>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <img src="img/home page/5.png" alt="Logistics Efficiency Icon">
+                    <h3>Boost Logistics Efficiency</h3>
+                    <p>With advanced real-time tracking and enhanced shipment visibility, TRACK360 helps you identify bottlenecks, optimize delivery processes, and streamline logistics operations effortlessly.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <img src="img/home page/6.png" alt="Operational Costs Icon">
+                    <h3>Reduce Operational Costs</h3>
+                    <p>Eliminate the need for expensive carrier integrations and minimize customer service costs by reducing "Where Is My Order" (WISMO) inquiries with automated tracking updates and proactive delay notifications.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <img src="img/home page/7.png" alt="Customer Trust Icon">
+                    <h3>Build Customer Trust</h3>
+                    <p>Enhance post-purchase communication with real-time updates, keeping customers engaged and satisfied, ultimately improving brand loyalty and fostering long-term relationships.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="info-bar">
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h3>CALL CENTER</h3>
+                    <p>+60 19-388 2231</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>WORKING HOURS</h3>
+                    <p>Mon-Fri: 9AM-6PM</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>OUR LOCATION</h3>
+                    <p>Sunway Unviersity</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                    <h3>GLOBAL OFFICE</h3>
+                    <p>5 Continents, 30 Countries</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <!-- Add this just before the closing </body> tag -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Seller Platform</h2>
+            <p>Please sign-in to your account to access the Seller Platform</p>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" class="create-account-link">Create an account</a></p>
+        </div>
+    </div>
+</body>
+</html>

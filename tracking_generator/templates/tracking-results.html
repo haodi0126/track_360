@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Results - Track360</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tracking-results.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/my logo/track360.jpeg" alt="Track360 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">TRACK <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="track.html">TRACK YOUR PARCEL</a>
+                            <a href="bulk-track.html">BULK TRACK</a>
+                            <a href="view-all-shipments.html">VIEW ALL SHIPMENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#our-services">SERVICES</a></li>
+                    <li><a href="index.html#Analytics-Dashboard">ANALYTICS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+                <button id="signUpBtn" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="tracking-results">
+            <h1>Tracking Results</h1>
+            <div id="result-content">
+                <table class="tracking-table">
+                    <tr>
+                        <th>Tracking Number:</th>
+                        <td id="tracking-number"></td>
+                    </tr>
+                    <tr>
+                        <th>Status:</th>
+                        <td id="status"></td>
+                    </tr>
+                    <tr>
+                        <th>Estimated Delivery:</th>
+                        <td id="estimated-delivery"></td>
+                    </tr>
+                    <tr>
+                        <th>Current Location:</th>
+                        <td id="current-location"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="tracking-results.js"></script>
+</body>
+</html>

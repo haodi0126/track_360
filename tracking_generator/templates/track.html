@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order - Track360</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="track-styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/my logo/track360.jpeg" alt="Track360 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">TRACK <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="track.html">TRACK YOUR PARCEL</a>
+                            <a href="bulk-track.html">BULK TRACK</a>
+                            <a href="view-all-shipments.html">VIEW ALL SHIPMENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="index.html#Analytics-Dashboard">ANALYTICS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="signInBtn" class="btn btn-secondary">Sign In</button>
+                <button id="signUpBtn" class="btn btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="track-order">
+            <h1>Track Your Order</h1>
+            <form id="tracking-form" action="tracking-results.html" method="GET">
+                <input type="text" id="tracking-number" name="tracking-number" placeholder="Enter your tracking number" required>
+                <button type="submit" class="btn btn-primary">TRACK NOW</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Add this just before the closing </body> tag -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Seller Platform</h2>
+            <p>Please sign-in to your account to access the Seller Platform</p>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" class="create-account-link">Create an account</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
